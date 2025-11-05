@@ -137,6 +137,6 @@ elif page == "BMI Calculator ⚖️😊":
     st.markdown("""
         <div class='footer'>
             <br><hr><br>
-            <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
+            <strong>Created by:</strong> •Akshita Soni 🤍 Gaurav Singh 🌟 •  Divyansh Sharma 😄 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
