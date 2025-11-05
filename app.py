@@ -90,7 +90,7 @@ elif page == "BMI Calculator ⚖️😊":
     gender = st.radio("Gender", ["Male ♂️", "Female ♀️", "Other 🌈"], horizontal=True)
 
     st.markdown("---")
-    if st.button("🧮 Calculate BMI 🌙"):
+    if st.button("🧮 Calculate BMI 😊"):
         bmi = weight_kg / ((height_cm / 100) ** 2)
         if bmi < 18.5:
             category = "Underweight 🟡"
@@ -111,7 +111,7 @@ elif page == "BMI Calculator ⚖️😊":
             unsafe_allow_html=True
         )
 
-        with st.expander("ℹ️ About BMI Categories 🌙"):
+        with st.expander("ℹ️ About BMI Categories 😊"):
             st.write("""
             - **Underweight:** BMI less than 18.5  
             - **Normal weight:** BMI between 18.5 and 24.9  
@@ -128,3 +128,4 @@ elif page == "BMI Calculator ⚖️😊":
             <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
+
