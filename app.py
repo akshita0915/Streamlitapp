@@ -57,7 +57,7 @@ if page == "E-Commerce 🛒✨":
 # ============================================================
 # ⚖️ PAGE 2: BMI CALCULATOR
 # ============================================================
-elif page == "BMI Calculator ⚖️🌙":
+elif page == "BMI Calculator ⚖️😊":
     st.markdown("""
         <style>
             .result-box { padding: 1.2rem; border-radius: 10px; text-align: center; font-size: 1.2rem; font-weight: 600; }
@@ -128,3 +128,4 @@ elif page == "BMI Calculator ⚖️🌙":
             <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
+
