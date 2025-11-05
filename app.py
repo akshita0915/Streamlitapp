@@ -2,11 +2,11 @@ import streamlit as st
 from PIL import Image
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="My Mini App", page_icon="🛍️🌙", layout="wide")
+st.set_page_config(page_title="My Mini App", page_icon="🛍️😊", layout="wide")
 
 # --- SIDEBAR NAVIGATION ---
 st.sidebar.title("🔍 Navigation")
-page = st.sidebar.radio("Choose a Page:", ["E-Commerce 🛒✨", "BMI Calculator ⚖️🌙"])
+page = st.sidebar.radio("Choose a Page:", ["E-Commerce 🛒✨", "BMI Calculator ⚖️😊"])
 
 # ============================================================
 # 🛒 PAGE 1: E-COMMERCE CLONE
@@ -15,15 +15,27 @@ if page == "E-Commerce 🛒✨":
     st.markdown("""
         <style>
             body { background-color: #f4f6f8; }
-            .product-card { background: white; border-radius: 10px; padding: 1rem; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; transition: transform 0.2s; }
+            .product-card { 
+                background: white; 
+                border-radius: 10px; 
+                padding: 1rem; 
+                box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+                text-align: center; 
+                transition: transform 0.2s; 
+            }
             .product-card:hover { transform: scale(1.03); }
-            .product-name { font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 0.5rem; color: #2b5876; }
+            .product-name { 
+                font-family: 'Poppins', sans-serif; 
+                font-weight: 600; 
+                margin-top: 0.5rem; 
+                color: #2b5876; 
+            }
             .footer { text-align: center; color: gray; font-size: 0.9rem; margin-top: 40px; }
         </style>
     """, unsafe_allow_html=True)
 
     st.markdown("<h1 style='text-align:center; color:#2b5876;'>🛍️ ShopEasy — Your Mini Store 🌟</h1>", unsafe_allow_html=True)
-    st.markdown("#### Browse the latest products — only frontend demo (no checkout) 😄")
+    st.markdown("#### Browse the latest products — frontend-only demo (no checkout) 😄")
 
     products = [
         {"name": "Apple iPhone 15 📱", "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693594200619"},
@@ -45,12 +57,12 @@ if page == "E-Commerce 🛒✨":
             """, unsafe_allow_html=True)
 
     st.markdown("---")
-    st.caption("💡 Frontend-only demo — inspired by Flipkart & Amazon UI 🌙✨")
+    st.caption("💡 Frontend-only demo — inspired by Flipkart & Amazon UI 😊✨")
 
     st.markdown("""
         <div class='footer'>
             <br><hr><br>
-            <strong>Created by:</strong> Akshita Soni 🌙 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
+            <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
 
@@ -65,7 +77,7 @@ elif page == "BMI Calculator ⚖️😊":
         </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("<h1 style='text-align:center;'>⚖️ BMI Calculator 😃</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>⚖️ BMI Calculator 😊</h1>", unsafe_allow_html=True)
     st.markdown("#### Calculate your Body Mass Index easily with flexible unit options 😄")
 
     height_unit = st.radio("Select height unit:", ["Centimeters (cm) 📏", "Feet/Inches 🦶"], horizontal=True)
@@ -79,8 +91,8 @@ elif page == "BMI Calculator ⚖️😊":
             height_inches = st.number_input("Inches", min_value=0, max_value=11, value=7)
         height_cm = (height_feet * 12 + height_inches) * 2.54
 
-    weight_unit = st.radio("Select weight unit:", ["Kilograms (kg) ⚖️", "Pounds (lbs) 🏋️‍♂️"], horizontal=True)
-    if weight_unit == "Kilograms (kg) ⚖️":
+    weight_unit = st.radio("Select weight unit:", ["Kilograms (kg) ⚖️😊", "Pounds (lbs) 🏋️‍♂️😊"], horizontal=True)
+    if weight_unit == "Kilograms (kg) ⚖️😊":
         weight_kg = st.slider("Weight (kg)", 30, 150, 65)
     else:
         weight_lbs = st.slider("Weight (lbs)", 66, 330, 150)
@@ -119,7 +131,7 @@ elif page == "BMI Calculator ⚖️😊":
             - **Obese:** BMI 30 or more
             """)
     else:
-        st.info("👉 Please choose your height and weight, then click **Calculate BMI** 🌟")
+        st.info("👉 Please choose your height and weight, then click **Calculate BMI** 😊")
 
     st.markdown("---")
     st.markdown("""
@@ -128,4 +140,3 @@ elif page == "BMI Calculator ⚖️😊":
             <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
-
