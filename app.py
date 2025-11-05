@@ -62,7 +62,7 @@ if page == "E-Commerce 🛒✨":
     st.markdown("""
         <div class='footer'>
             <br><hr><br>
-            <strong>Created by:</strong> • Akshita Soni 🤍 • Gaurav Singh 😄 • Gajraj Singh 😊 • Divyansh Sharma ✨️
+            <strong>Created by:</strong> • AKSHITA SONI 🤍 • Gaurav Singh 😄 • Gajraj Singh 😊 • Divyansh Sharma ✨️
         </div>
     """, unsafe_allow_html=True)
 
@@ -137,6 +137,6 @@ elif page == "BMI Calculator ⚖️😊":
     st.markdown("""
         <div class='footer'>
             <br><hr><br>
-            <strong>Created by:</strong> • Akshita Soni 🤍 • Gaurav Singh 😄 • Gajraj Singh 😊 • Divyansh Sharma ✨️
+            <strong>Created by:</strong> • AKSHITA SONI 🤍 • Gaurav Singh 😄 • Gajraj Singh 😊 • Divyansh Sharma ✨️
         </div>
     """, unsafe_allow_html=True)
