@@ -128,5 +128,3 @@ elif page == "BMI Calculator ⚖️😊":
             <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
-
-
