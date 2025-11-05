@@ -65,7 +65,7 @@ elif page == "BMI Calculator ⚖️😊":
         </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("<h1 style='text-align:center;'>⚖️ BMI Calculator 🌙</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>⚖️ BMI Calculator 😃</h1>", unsafe_allow_html=True)
     st.markdown("#### Calculate your Body Mass Index easily with flexible unit options 😄")
 
     height_unit = st.radio("Select height unit:", ["Centimeters (cm) 📏", "Feet/Inches 🦶"], horizontal=True)
@@ -128,4 +128,5 @@ elif page == "BMI Calculator ⚖️😊":
             <strong>Created by:</strong> Akshita Soni 🤍 • Divyansh Sharma 😄 • Gaurav Singh 🌟 • Gajraj Singh 🛍️
         </div>
     """, unsafe_allow_html=True)
+
 
